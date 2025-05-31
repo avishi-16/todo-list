@@ -15,7 +15,7 @@ const handleSubmit = e => {
         <input type="text" className="form-input"
         value = {value} placeholder="Update Task" 
         onChange={(e) => setValue(e.target.value)}/>
-        <button type="submit" className="form-btn">Update Task</button>
+        <button type="submit" className="form-btn" disabled={value.trim() === ""}>Update Task</button>
         </form>
     )
 }

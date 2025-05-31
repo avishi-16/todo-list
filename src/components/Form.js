@@ -15,7 +15,7 @@ const handleSubmit = e => {
         <input type="text" className="form-input"
         value = {value} placeholder="What is the task today?" 
         onChange={(e) => setValue(e.target.value)}/>
-        <button type="submit" className="form-btn">Add Task</button>
+        <button type="submit" className="form-btn" disabled={value.trim() === ""}>Add Task</button>
         </form>
     )
 }
